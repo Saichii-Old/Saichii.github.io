@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: 'Alata',"游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	color: #242A3A;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	min-width: 320px;
+	background: linear-gradient(90deg, #efa320 20%, #fb7108 80%);
+	/* overflow: hidden; */
+}
+/* .h-nav {
+    background-color: rgb(192, 192, 192);
+    height: 100px;
+    
+} */
+
+/* RWD */
+/* @media(max-width:1200px){
+	
+}
+@media(max-width:1024px){
+	
+}
+
+@media(max-width:768px){
+
+} */
+
+@media(max-width:600px){
+
+	.logo{
+	left: 130px;
+}
+.mainTitle>h1{
+	margin-right: 60px;
+	font-size: 100px;
+	text-align: center;	
+}
+
+.s-nav{
+	visibility: hidden;
+}
+
+}
+
+	
+
+/* menu-trigger */
+.menu-trigger {
+	position: fixed;
+	top:-25px;
+	right: -10px;
+	width: 105px;
+	height: 102px;
+	background: none;
+	border: none;
+	appearance: none;
+  	z-index: 803;
+}
+
+.menu-trigger span {
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #F7F7F7;
+	border-radius: 4px;
+}
+
+.menu-trigger::after {
+	content: '';
+	display: block;
+	position: fixed;
+	top:0;
+	left: -1px;
+	width: 1px;
+	height: 100vh;
+	background: none;
+}
+
+.menu-trigger span:nth-of-type(1) {
+	top: 40px;
+	left: 40px;
+}
+.menu-trigger span:nth-of-type(2) {
+	top: 50px;
+	width: 15px;
+	right: 40px;
+}
+.menu-trigger span:nth-of-type(3) {
+	bottom: 40px;
+	right: 40px;
+}
+
+.menu-trigger:hover span:nth-of-type(1) ,
+.menu-trigger:hover span:nth-of-type(3) {
+	width: 15px;
+} 
+
+.menu-trigger:hover span:nth-of-type(2) {
+	width: 25px;
+} 
+
+
+.s-nav{
+    position: fixed;
+	z-index: 800;
+	top:48%;
+	right: -250px;
+	font-size: 15px;
+	transform: rotate(90deg);
+	/* transition: .2s; */
+	display: flex;
+	/* overflow: hidden; */
+}
+.s-nav a {
+	color: #F7F7F7;
+	text-decoration: none;
+	padding: 20px 10px;
+	
+}
+
+.s-nav a:hover{
+	font-weight: bolder;
+}
+
+
+.logo {
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.toggleBtn {
+    position: fixed ;
+    color: white;
+    z-index: 1000;
+    top:0px;
+	right: 0px;
+}
+
+.wrapper {
+    height: 100vh;
+	min-height: 670px;
+    overflow: hidden;
+	/* background-image: url(https://picsum.photos/id/100/1920/1080); */
+}
+
+.page2 {
+	/* background-image: url(https://picsum.photos/id/102/1920/1080); */
+	height: 100vh;
+	min-height: 670px;
+    overflow: hidden;
+}
+
+
+.slick-card {
+	margin: auto;
+	width: 78%;
+}
+
+.btn-box {
+	display: block;
+	margin-top: 100px;
+}
+
+img {
+	border-radius: 30px;
+}
+
+/* .box-img {
+	border-radius: 6px;
+	border: 2px solid black;
+} */
+
+.box-wrap{
+	position: relative;
+	display: block;
+	border: 2px solid black;
+	padding: 20px 10px;
+	border-radius: 10px;
+	width: 270px;
+	background: rgb(211, 109, 109,1);
+	
+}
+
+.box-wrap:hover{
+	position: absolute;
+	top: 170px;
+	background-color: rgb(238, 238, 238,0);
+    box-shadow: 0px 20px 20px rgba(0,0,0,.25);
+	transition: all .3s ease-in-out;
+}
+
+
+.about {
+	position: relative;
+	color: #FFF;
+	font-size: 130px;
+	line-height: 1.2;
+	top:100px;
+	left: 0;
+	display: inline-block;
+	letter-spacing: 4px;
+}
+
+.about::after {
+	content: 'My mission is to continue to create promising web design & website.';
+	font-size: 14px;
+	display: inline-block;
+	position: absolute;
+	right: -25px;
+	bottom: 15px;
+	line-height: 2;
+	letter-spacing: 0px;
+	width: 120px;
+}
+
+.about-txt {
+	/* position: absolute; */
+	right: 0;
+	top: 100px;
+	display: block;
+	width: calc(100% - 400px);
+	max-width: 740px;
+	min-width: 500px;
+}
+
+
+.skillIcon {
+	position: relative;
+	top: -50px;
+	left: -50px;
+	margin: auto;
+	max-width: 700px;
+}
+
+.skillIcon img {
+    width: 125px;
+    height: 125px;
+}
+
+
+.skill-txt > h2 {
+	position: relative;
+	color: #FFF;
+	font-size: 130px;
+	line-height: 1.2;
+	top:0 px;
+	left: -70px;
+	display: inline-block;
+	letter-spacing: 4px;
+}
+
+.skill-txt > h2::after{
+	content: 'My mission is to continue to create promising web design & website.';
+	font-size: 14px;
+	display: inline-block;
+	position: absolute;
+	right: -50px;
+	bottom: 15px;
+	line-height: 2;
+	letter-spacing: 0px;
+	width: 120px;
+}
+
+
+.footer{
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+
+.contact > h2 {
+	position: relative;
+	color: #FFF;
+	font-size: 65px;
+	line-height: 1.2;
+	top:50px;
+	left: 0;
+	display: inline-block;
+	letter-spacing: 4px;
+}
+
+.copyright{
+	position: absolute;
+	right: 30px;
+}
